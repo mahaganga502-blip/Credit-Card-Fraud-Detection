@@ -1,0 +1,33 @@
+transactions = [
+    [100, 2, 0],
+    [200, 3, 0],
+    [150, 1, 0],
+    [5000, 15, 1],
+    [7000, 20, 1],
+    [6000, 18, 1]
+]
+labels = [0, 0, 0, 1, 1, 1]
+amount = 6500
+transaction_count = 17
+international = 1
+if amount > 4000 and transaction_count > 10 and international == 1:
+    prediction = 1
+else:
+    prediction = 0
+print("Credit Card Fraud Detection")
+print("----------------------------")
+print("Amount:", amount)
+print("Transaction Count:", transaction_count)
+print("International:", international)
+if prediction == 1:
+    print("Result: FRAUD")
+else:
+    print("Result: GENUINE")
+
+OUTPUT:
+Credit Card Fraud Detection
+----------------------------
+Amount: 6500
+Transaction Count: 17
+International: 1
+Result: FRAUD
